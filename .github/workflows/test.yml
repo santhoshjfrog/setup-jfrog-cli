@@ -16,7 +16,7 @@ jobs:
               env:
                   JF_ARTIFACTORY_LOCAL: eyJ2ZXJzaW9uIjoxLCJ1cmwiOiJodHRwczovL2RpdmlqYS5qZnJvZy5pby9hcnRpZmFjdG9yeS8iLCJ1c2VyIjoic2FudGhvc2giLCJwYXNzd29yZCI6IkFQNHVyRFlFTUhia001UHZMckt5ZnlTcjdzRCIsInRva2VuUmVmcmVzaEludGVydmFsIjo2MCwic2VydmVySWQiOiJkaXZpamEifQ==
             - name: Sanity # Check that the correct CLI downloaded and local server successfully configured
-              run: jfrog c show --url=https://divija.jfrog.io/artifactory
+              run: jfrog c show
             - name: Check build URL
               uses: wei/curl@master
               with:
